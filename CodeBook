@@ -1,0 +1,10 @@
+Dataset Overview
+This dataset contains sensor data collected from 30 subjects performing six different activities (e.g., WALKING, SITTING). The data includes measurements from a Samsung Galaxy S II smartphone's accelerometer and gyroscope.
+
+Variables
+X_test & X_train: These files contain the sensor readings (accelerometer and gyroscope data) for test and training sets. Each column represents a feature from the sensor data (e.g., mean or standard deviation of the sensor's axes).
+y_test & y_train: These files contain the activity labels (e.g., WALKING, STANDING) corresponding to the test and training datasets. They are linked to the X_test/X_train datasets by the row index.
+subject_test & subject_train: These files contain the IDs of the subjects who performed the activities (1 to 30).
+activity_labels: This file maps the activityId to its descriptive activity name (e.g., 1 -> WALKING).
+features: Contains the list of feature names for the sensor measurements (e.g., mean and standard deviation).
+Data Processing：The data was merged, filtered to retain mean and std measurements, and activity labels were added to form a tidy dataset, tidy_data.txt.
